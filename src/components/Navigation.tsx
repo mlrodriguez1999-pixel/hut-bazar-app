@@ -27,6 +27,9 @@ const Navigation: React.FC = () => {
             <Link to="/products" className="text-gray-600 hover:text-primary transition">
               Productos
             </Link>
+            <Link to="/jokes" className="text-gray-600 hover:text-primary transition">
+              😂 Chistes
+            </Link>
             <Link to="/about" className="text-gray-600 hover:text-primary transition">
               Sobre Nosotros
             </Link>
@@ -70,6 +73,13 @@ const Navigation: React.FC = () => {
               onClick={() => setIsOpen(false)}
             >
               Productos
+            </Link>
+            <Link
+              to="/jokes"
+              className="block px-4 py-2 text-gray-600 hover:bg-primary hover:text-white rounded transition"
+              onClick={() => setIsOpen(false)}
+            >
+              😂 Chistes
             </Link>
             <Link
               to="/about"
