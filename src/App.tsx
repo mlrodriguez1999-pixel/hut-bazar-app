@@ -1,4 +1,4 @@
-import React
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import JokeGenerator from './pages/JokeGenerator'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/jokes" element={<JokeGenerator />} />
           </Routes>
         </main>
         <Footer />
